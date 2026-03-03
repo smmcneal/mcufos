@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     siteName: 'MCUFOS',
     type: 'website',
   },
+  verification: {
+    google: 'ZOpwxS3qPV39sGCUNXTnbWlxdQXgbpLT4NEcOZOgo7c',
+  },
 }
 
 export default function RootLayout({
