@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import HomepageSearch from '@/components/HomepageSearch'
 
+export const revalidate = 3600 // rebuild this page every hour
+
 async function getStats() {
   const [sk, ct, ufo] = await Promise.all([
     supabase.from('serial_killers').select('id', { count: 'exact', head: true }).eq('published', true),
